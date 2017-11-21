@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xCard SYSTEM "C:\Inetpub\wwwroot\3AM\xml\silhouette\jabber-xcard.dtd">
+<?xml-stylesheet type="text/xsl" href="C:\Inetpub\wwwroot\3AM\xml\silhouette\xcard2rdf-xml.xsl"?>
+<xCard>
+	<vCard>
+		<VERSION>2.0</VERSION>
+		<FN>Jason Robert Karns</FN>
+		<N>
+			<FAMILY>Karns</FAMILY>
+			<GIVEN>Jason</GIVEN>
+			<MIDDLE>Robert</MIDDLE>
+			<PREFIX>Mr.</PREFIX>
+		</N>
+		<NICKNAME>Jason</NICKNAME>
+		<URL>http://3amproductions.net/jason.php</URL>
+		<BDAY>1983-07-22</BDAY>
+		<PHOTO>
+			<TYPE>image/jpeg</TYPE>
+			<BINVAL>MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329</BINVAL>
+		</PHOTO>
+		<ORG>
+			<ORGNAME>3AM Productions</ORGNAME>
+			<ORGUNIT>Technology</ORGUNIT>
+		</ORG>
+		<TITLE>Co-Founder</TITLE>
+		<TITLE>Chief Technology Officer</TITLE>
+		<ROLE>Programmer</ROLE>
+		<!--
+		<LOGO>
+			<TYPE/>
+			<BINVAL/>
+		</LOGO>
+-->
+		<TEL>
+			<WORK/>
+			<VOICE/>
+			<CELL/>
+			<PREF/>
+			<NUMBER>937-308-0456</NUMBER>
+		</TEL>
+		<ADR>
+			<WORK/>
+			<DOM/>
+			<PREF/>
+			<EXTADD>Apartment B1</EXTADD>
+			<STREET>1591 Presidential Drive</STREET>
+			<LOCALITY>Columbus</LOCALITY>
+			<REGION>Ohio</REGION>
+			<PCODE>43212</PCODE>
+			<CTRY>United States of America</CTRY>
+		</ADR>
+		<LABEL>
+			<LINE/>
+		</LABEL>
+		<TZ/>
+		<GEO>
+			<LAT/>
+			<LON/>
+		</GEO>
+-->
+		<TEL>
+			<HOME/>
+			<VOICE/>
+			<NUMBER>937-857-9481</NUMBER>
+		</TEL>
+		<ADR>
+			<HOME/>
+			<DOM/>
+			<EXTADD/>
+			<STREET>12259 Cowpath Road</STREET>
+			<LOCALITY>Saint Paris</LOCALITY>
+			<REGION>Ohio</REGION>
+			<PCODE>43072</PCODE>
+			<CTRY>United States of America</CTRY>
+		</ADR>
+		<!--
+		<LABEL>
+			<LINE/>
+		</LABEL>
+		<TZ/>
+		<GEO>
+			<LAT/>
+			<LON/>
+		</GEO>
+-->
+		<EMAIL>
+			<HOME/>
+			<WORK/>
+			<INTERNET/>
+			<PREF/>
+			<USERID>jason@3amproductions.net</USERID>
+		</EMAIL>
+	</vCard>
+</xCard>

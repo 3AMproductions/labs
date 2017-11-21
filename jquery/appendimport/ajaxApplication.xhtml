@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>An Ajax Application Example</title>
+	<meta http-equiv="content-type" content="text/xml; charset=utf-8"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta name="author" content="Anthony T. Holdener III"/>
+	<meta name="copyright" content="Copyright (C) 2007 Anthony T. Holdener III.  All Rights Reserved."/>
+	<meta name="keywords" content="importNode, example, DOM, cross-browser, Ajax, application"/>
+	<meta name="description" content="This is an example of using my document._importNode() method in an Ajax application."/>
+	<meta name="robots" content="NOINDEX"/>
+    <script type="application/javascript" src="http://cachefile.net/scripts/jquery/1.2.1/jquery-1.2.1.pack.js"></script>
+	<script type="application/javascript" src="jquery.appendImport.js"></script>
+	<script type="application/javascript">
+        jQuery(function(){
+            $('#xhrText').append('<div id="innerDiv"><p>I am innerDiv</p></div>');
+            $('#applicationButton').click(function() {
+                $.get("simulatedServerResponse.xml",{param1:"data1"},function(xml,status){
+                   $('#innerDiv').appendImport($('response > div',xml),{}); 
+                });
+				return (false);
+			});
+        });
+	</script>
+	<style type="text/css">
+		body { background-color: #fff; color: #000; font-family: Geneva, sans-serif; font-size: 1em; }
+		#documentHeader { margin-bottom: 40px; }
+		#documentFooter { position: fixed; left: 10px; bottom: 5px; }
+		#xhrText { border: 2px solid #f00; margin-top: 20px;}
+		.underline { text-decoration: underline; }
+		.announce { background-color: #ff0; color: #000; }
+	</style></head><body>
+	<div id="documentHeader">
+		<h1>An Ajax Application Example</h1>
+	</div>
+	<div id="documentBodyContent">
+		<div id="applicationFunction">
+			<form id="applicationForm" action="self" method="post">
+				<div>
+					<label for="applicationButton">Press this button for example: <input id="applicationButton" value="Go!" type="button"/></label>
+				</div>
+			</form>
+		</div>
+		<div id="xhrText"><p>I am the original content.</p></div>
+	</div>
+	<div id="documentFooter">
+		Copyright © 2007 Anthony T. Holdener III.  All Rights Reserved.
+	</div>
+</body>
+</html>

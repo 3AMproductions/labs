@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>OSU Bars</name>
+	<description>Bars near OSU Campus</description>
+	
+	<Placemark id="paninis">
+		<name><![CDATA[Panini's Bar and Grill]]></name>
+		<description><![CDATA[1716 N High St, Columbus, OH 43201-1105<br/>(614) 291-3333]]></description>
+		<Snippet maxLines="2"><![CDATA[1716 N High St, Columbus, OH 43201-1105<br/>(614) 291-3333]]></Snippet>
+		<Point>
+			<coordinates>-83.00752300000001,39.99735,0</coordinates>
+		</Point>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>http://labs.3amproductions.net/geo/osu-pin.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+	</Placemark>
+	<Placemark id="mamas">
+		<name><![CDATA[Mama&apos;s Pasta N Brew]]></name>
+		<Snippet maxLines="2"><![CDATA[23 Campus Pl, Columbus, OH 43201-1607<br/>(614) 299-7724]]></Snippet>
+		<Point>
+			<coordinates>-83.007631,39.999437,0</coordinates>
+		</Point>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>http://labs.3amproductions.net/geo/osu-pin.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+	</Placemark>
+	<Placemark>
+		<name>O Patio &amp; Pub</name>
+		<Snippet maxLines="2"><![CDATA[12 E 15th Ave, Columbus, OH 43201-1602<br/>(614) 298-8000]]></Snippet>
+		<Point>
+			<coordinates>-83.007655,40.00004,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Four Keg Bar &amp; Grill</name>
+		<Snippet maxLines="2"><![CDATA[12 E 15th Ave, Columbus, OH 43201-1602<br/>(614) 298-8000]]></Snippet>
+		<Point>
+			<coordinates>-83.007655,40.00004,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Buffalo Wild Wings Grill &amp; Bar</name>
+		<Snippet maxLines="2"><![CDATA[2151 N High St, Columbus, OH 43201-1118<br/>(614) 291-2362]]></Snippet>
+			<Point>
+			<coordinates>-83.009303,40.00625,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

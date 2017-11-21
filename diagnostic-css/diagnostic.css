@@ -1,0 +1,159 @@
+/********************************
+ * Diagnostic CSS Stylesheet
+ * Author: Jason Karns
+ * Original: Eric Meyer [http://meyerweb.com/eric/thoughts/2007/09/07/diagnostic-styling/]
+ * Created: September 7, 2007
+ * Version 1.0
+*********************************/
+
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+/* highlight empty elements */
+div:empty, p:empty, span:empty, a:empty, li:empty, td:empty, th:empty, map:empty
+{padding: 0.5em !important; background: yellow !important;}
+
+/* highlight missing table attributes */
+/* @summary, @scope */
+table:not([summary]), th:not([scope])
+{outline: 3px solid red !important;}
+table[summary=""], th[scope]:not([scope="row"]):not([scope="col"]):not([scope="rowgroup"]):not([scope="colgroup"])
+{outline: 3px solid fuchsia !important;}
+/* abbr, axis, headers */
+th:not([abbr]), td:not([abbr]), th:not([axis]), td:not([axis]), th:not([headers]), td:not([headers])
+{border: 3px solid lime !important;}
+th[abbr]:not([abbr=""]), td[abbr]:not([abbr=""]), th[axis]:not([axis=""]), td[axis]:not([axis=""]), th[headers]:not([headers=""]), td[headers]:not([headers=""])
+{border: 3px solid yellow !important;}
+
+/* highlight bad attributes */
+*[style], *[align], *[valign], *[border], *[width]:not(img), *[height]:not(img), a[target], table[cellspacing], table[cellpadding]
+{outline: 3px solid red !important;}
+
+/* highlight bad javascript attributes */
+a[href^="javascript:"], *[onload], *[onunload], *[onchange], *[onsubmit], *[onreset], *[onselect], *[onblur], *[onfocus], *[onkeydown], *[onkeypress], *[onkeyup], *[onclick], *[ondblclick], *[onmousedown], *[onmousemove], *[onmouseover], *[onmouseout], *[onmouseup]
+{outline: 3px solid red !important;}
+
+/* highlight bad elements */
+font, center, b, i, big, small, hr, blink, marquee, map
+{outline: 3px solid red !important;}
+
+/* highlight images based on alt/title attributes */
+img:not([alt]){outline: 3px solid red !important;}
+img[alt=""]{outline: 3px dotted red !important;}
+img:not([title]){border: 3px solid fuchsia !important;}
+img[title=""]{border: 3px dotted fuchsia !important;}
+
+/* highlight links based on attributes */
+a:not([href]) {background: red !important;}
+a[href=""] {background: fuchsia !important;}
+a[href="#"] {background: lime !important;}
+a:not([title]) {outline: 3px solid fuchsia !important;}
+a[title=""] {outline: 3px solid lime !important;}
+a:not([rel]) {border: 3px solid lime !important;}
+a[rel=""] {border: 3px solid yellow !important;}
+
+/* highlight abbreviations without titles */
+abbr:not([title]) {outline: 3px solid red !important;}
+abbr[title=""] {outline: 3px solid fuchsia !important;}
+
+/* highlight acronyms without titles */
+acronym:not([title]) {outline: 3px solid red !important;}
+acronym[title=""] {outline: 3px solid fuchsia !important;}
+
+/* highlight blockquotes without cites */
+blockquote:not([cite]) {outline: 3px solid red !important;}
+blockquote[cite=""] {outline: 3px solid fuchsia !important;}
+
+/* highlight quotes without cites */
+q:not([cite]) {outline: 3px solid red !important;}
+q[cite=""] {outline: 3px solid fuchsia !important;}
+
+/* highlight definitions without titles */
+dfn:not([title]) {outline: 3px solid red !important;}
+dfn[title=""] {outline: 3px solid fuchsia !important;}
+
+/* highlight forms without methods, enctype, accept, accept-charset */
+form:not([method="get"]):not([method="post"]) {background: yellow !important;}
+form:not([enctype]), form[enctype=""] {border: 3px solid fuchsia !important;}
+form:not([accept]), form[accept=""],
+form:not([accept-charset]), form[accept-charset=""] {outline: 3px solid lime !important;}
+
+/* highlight deletes and inserts without cites and datetimes */
+ins:not([datetime]), del:not([datetime]) {outline: 3px solid red !important;}
+ins[datetime=""], del[datetime=""] {outline: 3px solid fuchsia !important;}
+ins:not([cite]), del:not([cite]) {border: 3px solid lime !important;}
+ins[cite=""], del[cite=""] {border: 3px solid yellow !important;}
+
+/* highlight inputs without types and improper attribute values */
+input:not([type]) {outline: 3px solid red !important;}
+input[type=""] {outline: 3px solid fuchsia !important;}
+input[disabled]:not([disabled="disabled"]),
+input[readonly]:not([readonly="readonly"]),
+input[type="radio"][checked]:not([checked="checked"]),
+input[type="checkbox"][checked]:not([checked="checked"])
+{outline:3px solid lime !important; }
+
+/* highlight selects, optgroups, and options without proper attributes */
+select[name=""], select[size=""] {border: 3px solid red !important;}
+select[disabled]:not([disabled="disabled"]),
+select[multiple]:not([multiple="multiple"]) {border: 3px solid fuchsia !important;}
+
+optgroup:not([label]) {border: 3px solid red !important;}
+optgroup[label=""] {border: 3px solid fuchsia !important;}
+optgroup[disabled]:not([disabled="disabled"]) {border: 3px solid lime !important;}
+
+option[selected]:not([selected="selected"]) {border: 3px solid lime !important;}
+option:not([value]),
+option:empty:not([value=""]),
+option[value=""]:not(:empty) {border: 3px solid red !important;}
+
+/* highlight textareas with improper attributes */
+textarea[disabled]:not([disabled="disabled"]),
+textarea[readonly]:not([readonly="readonly"])
+{border: 3px solid red !important;}
+
+/* highlight labels without for attribute */
+label:not([for]), label[for=""] {outline: 3px solid red;}
+
+/* highlight buttons without types and improper attribute values */
+button:not([type]) {background: red !important;}
+button[type=""] {background: fuchsia !important;}
+
+/* highlight bad element order */
+dt:last-child {outline:3px solid fuchsia !important;}
+dd:first-child {outline:3px solid fuchsia !important;}
+
+/* highlight improperly nested form fields */
+input, select, textarea {outline: 3px solid red !important;}
+form input, form select, form textarea {outline: 3px solid fuchsia !important;}
+form fieldset input, form fieldset select, form fieldset textarea {outline: 0 !important;}
+fieldset {border: 3px solid fuchsia !important;}
+form fieldset {border: 0 !important;}
+/* this doesn't work as expected 
+option {border: 3px solid red !important; }
+optgroup option {border: 0 !important;}
+optgroup {border: 3px solid fuchsia !important;}
+select optgroup {border: 0 !important;}
+*/
+
+/* highlight improperly nested table elements */
+table > tr th, table > tr td {background: lime !important;}
+
+
+/* highlight missing lang */
+/* TODO: add support for xml:lang */
+html:not([lang]):not([xml|lang]) {border: 5px solid red !important;}
+
+/* highlight addresses that could be vcards */
+address:not(.vcard) {outline: 3px solid fuchsia !important;}
+.vcard address {outline: 0 !important;}
+
+/* show level of div nesting */
+/*
+div {border: solid 2px red !important;}
+div div {border-color: orange !important;}
+div div div {border-color: yellow !important;}
+div div div div {border-color: green !important;}
+div div div div div {border-color: aqua !important;}
+div div div div div div {border-color: navy !important;}
+div div div div div div div {border-color: purple !important;}
+*/

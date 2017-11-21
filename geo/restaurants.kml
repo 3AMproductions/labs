@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>OSU Bars</name>
+	<description>Bars near OSU Campus</description>
+	
+	<Placemark>
+		<name>Library Bar</name>
+		<Snippet maxLines="2"><![CDATA[2169 N High St, Columbus, OH 43201-1118<br/>(614) 299-3245]]></Snippet>
+		<Point>
+			<coordinates>-83.009479,40.00662,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Notals III</name>
+		<Snippet maxLines="2"><![CDATA[1880 N High St, Columbus, OH 43201-4419<br/>(614) 291-7909]]></Snippet>
+		<Point>
+			<coordinates>-83.008004,40.000669,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Out-R-Inn</name>
+		<Snippet maxLines="2"><![CDATA[20 E Frambes Ave, Columbus, OH 43201-1406<br/>(614) 294-9259]]></Snippet>
+		<Point>
+			<coordinates>-83.008447,40.005059,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Little Bar</name>
+		<Snippet maxLines="2"><![CDATA[2195 N High St, Columbus, OH 43201-1118<br/>(614) 291-8887]]></Snippet>
+		<Point>
+			<coordinates>-83.009788,40.006838,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Northberg Tavern</name>
+		<Snippet maxLines="2"><![CDATA[2084 N High St, Columbus, OH 43201<br/>(614) 421-3667]]></Snippet>
+		<Point>
+			<coordinates>-83.008635,40.004847,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

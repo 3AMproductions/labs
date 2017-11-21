@@ -1,0 +1,41 @@
+W3C CSS		http://jigsaw.w3.org/css-validator/validator?warning=2&profile=css3&usermedium=all&uri=
+W3C Feed	http://validator.w3.org/feed/check.cgi?url=
+W3C HTML	http://validator.w3.org/check?verbose=1&uri=
+W3C Link	http://validator.w3.org/checklink?check=Check&hide_type=all&summary=on&uri=
+Cynthia - 508	http://www.cynthiasays.com/mynewtester/cynthia.exe?rptmode=-1&url1=
+Cynthia - WAI	http://www.cynthiasays.com/mynewtester/cynthia.exe?rptmode=2&url1=
+Semantic Web	http://www.w3.org/2005/08/online_xslt/xslt
+		?xslfile=http://www.w3.org/2002/08/extract-semantic.xsl
+		&xmlfile=http://cgi.w3.org/cgi-bin/tidy-if?docAddr=
+WDG HTML	http://htmlhelp.com/cgi-bin/validate.cgi?warnings=yes&spider=yes&url=
+WDG CSS		http://htmlhelp.com/cgi-bin/csscheck.cgi?cssarea=&warnings=yes&input=yes&url=
+WDG Link	http://htmlhelp.com/tools/valet/linktest.cgi?date=2000-01-01&type=Full&url=
+
+FEED		http://feedvalidator.org/check.cgi?url=
+Cacheability	http://www.ircache.net/cgi-bin/cacheability.py?descend=on&query=
+
+TAW - Accessibility	http://www.tawdis.net/taw3/online?nivel=3&idioma=en&enviar=Analyse&url=
+Webaim - WAVE	http://wave.webaim.org/wave/Output.jsp?InputUrlText=
+SpeedTest	http://www.iwebtool.com/speed_test?domain=
+
+Delorie BackCompat	http://www.delorie.com/web/wpbcv.cgi
+		?img_broken=on&img_altless=on&img_sizeless=on&table_br=on
+		&agent=Mozilla%2F5.0+%28Windows%3B+U%3B+Windows+NT+5.1%3B+en-US%3B+rv%3A1.8.1.9%29+Gecko%2F20071025+Firefox%2F2.0.0.9
+		&url=
+Delorie Purifier	http://www.delorie.com/web/purify.cgi?purity=html40s&url=
+
+RDF Validator	http://www.w3.org/RDF/Validator/ARPServlet?PARSE=Parse+URI%3A+&TRIPLES_AND_GRAPH=PRINT_BOTH&FORMAT=SVG_EMBED&URI=
+XSD		http://www.w3.org/2001/03/webdata/xsv?&warnings=on&style=xsl&docAddrs=
+P3P		http://validator.w3.org/p3p/20020128/p3p.pl?uri=
+
+
+Sitemap		http://www.xml-sitemaps.com/index.php?op=validate-xml-sitemap&go=1&submit=Validate&sitemapurl=
+
+
+GZip		http://whatsmyip.org/mod_gzip_test/
+
+http://webxact.watchfire.com/
+http://www.sidar.org/ex_hera/index.php.en
+validome.org
+
+Visualizer

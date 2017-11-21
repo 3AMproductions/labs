@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+-->
+<html>
+<head>
+<title>Diagnostic Page</title>
+<link rel="stylesheet" media="all" type="text/css" href="diagnostic.css" />
+<style type="text/css">
+th:not([abbr]), td:not([abbr]), 
+th:not([axis]), td:not([axis]), 
+th:not([headers]), td:not([headers]), 
+th[abbr]:not([abbr=""]), td[abbr]:not([abbr=""]), 
+th[axis]:not([axis=""]), td[axis]:not([axis=""]), 
+th[headers]:not([headers=""]), td[headers]:not([headers=""])
+{border: inherit !important;}
+a:not([rel]), a[rel=""] {border: inherit !important;}
+</style>
+</head>
+<body>
+<h1>Bad Images</h1>
+<table summary="Testing image attributes based diagnostic styling">
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">no @alt</th>
+			<th scope="col">empty @alt</th>
+			<th scope="col">filled @alt</th>
+		</tr>
+		<tr>
+			<th scope="row">no @title</th>
+
+			<td><img src="favicon.gif" /></td>
+			<td><img src="favicon.gif" alt="" /></td>
+			<td><img src="favicon.gif" alt="filled" /></td>
+		</tr>
+		<tr>
+			<th scope="row">empty @title</th>
+			<td><img src="favicon.gif" title="" /></td>
+			<td><img src="favicon.gif" title="" alt="" /></td>
+			<td><img src="favicon.gif" title="" alt="filled" /></td>
+		</tr>
+		<tr>
+			<th scope="row">filled @title</th>
+			<td><img src="favicon.gif" title="filled" /></td>
+			<td><img src="favicon.gif" title="filled" alt="" /></td>
+			<td><img src="favicon.gif" title="filled" alt="filled" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Bad Links</h1>
+<table summary="Testing link attributes based diagnostic styling">
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">no @href</th>
+			<th scope="col">empty @href</th>
+			<th scope="col"># fill @href</th>
+			<th scope="col">filled @href</th>
+		</tr>
+		<tr>
+			<th scope="row">no @title</th>
+			<td><a>link</a></td>
+			<td><a href="">link</a></td>
+			<td><a href="#">link</a></td>
+			<td><a href="filled">link</a></td>
+		</tr>
+		<tr>
+			<th scope="row">empty @title</th>
+			<td><a title="">link</a></td>
+			<td><a href="" title="">link</a></td>
+			<td><a href="#" title="">link</a></td>
+			<td><a href="filled" title="">link</a></td>
+		</tr>
+		<tr>
+			<th scope="row">filled @title</th>
+			<td><a title="filled">link</a></td>
+			<td><a href="" title="filled">link</a></td>
+			<td><a href="#" title="filled">link</a></td>
+			<td><a href="filled" title="filled">link</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Bad Tables</h1>
+<table summary="Testing table/cell attribute based diagnostic styling">
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">no @summary</th>
+			<th scope="col">empty @summary</th>
+			<th scope="col">filled @summary</th>
+		</tr>
+		<tr>
+			<th scope="row">no @scope</th>
+			<td>
+			<table>
+				<tbody>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+					</tr>
+					<tr>
+						<th>C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="">
+				<tbody>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+					</tr>
+					<tr>
+						<th>C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="filled">
+				<tbody>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+					</tr>
+					<tr>
+						<th>C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">empty @scope</th>
+			<td>
+			<table>
+				<tbody>
+					<tr>
+						<th scope="">A</th>
+						<th scope="">B</th>
+					</tr>
+					<tr>
+						<th scope="">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="">
+				<tbody>
+					<tr>
+						<th scope="">A</th>
+						<th scope="">B</th>
+					</tr>
+					<tr>
+						<th scope="">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="filled">
+				<tbody>
+					<tr>
+						<th scope="">A</th>
+						<th scope="">B</th>
+					</tr>
+					<tr>
+						<th scope="">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">filled @scope</th>
+			<td>
+			<table>
+				<tbody>
+					<tr>
+						<th scope="col">A</th>
+						<th scope="col">B</th>
+					</tr>
+					<tr>
+						<th scope="row">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="">
+				<tbody>
+					<tr>
+						<th scope="col">A</th>
+						<th scope="col">B</th>
+					</tr>
+					<tr>
+						<th scope="row">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			<table summary="filled">
+				<tbody>
+					<tr>
+						<th scope="col">A</th>
+						<th scope="col">B</th>
+					</tr>
+					<tr>
+						<th scope="row">C</th>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Empty Elements</h1>
+<dl>
+	<dt>Empty <code>div</code></dt>
+	<dd>
+	<div></div>
+	</dd>
+	<dd>
+	<div>filled</div>
+	</dd>
+	<dt>Empty <code>p</code></dt>
+	<dd>
+	<p></p>
+	</dd>
+	<dd>
+	<p>filled</p>
+	</dd>
+	<dt>Empty <code>span</code></dt>
+	<dd><span></span></dd>
+	<dd><span>filled</span></dd>
+	<dt>Empty <code>li</code></dt>
+	<dd>
+	<ul>
+		<li></li>
+		<li>filled</li>
+	</ul>
+	</dd>
+	<dt>Empty <code>th</code>, <code>td</code></dt>
+	<dd>
+	<table summary="Testing table cell descendant based styling.">
+		<tbody>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col">filled</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>filled</td>
+			</tr>
+		</tbody>
+	</table>
+	</dd>
+</dl>
+
+<h1>Bad Attributes</h1>
+<table summary="Testing table/cell deprecated attribute based styling."
+	cellspacing="5">
+	<tbody>
+		<tr>
+			<td>@cellspacing</td>
+			<td style="position:relative;">@style</td>
+			<td align="center">@align</td>
+			<td valign="center">@valign</td>
+		</tr>
+	</tbody>
+</table>
+<table summary="Testing table/cell deprecated attribute based styling."
+	cellpadding="5">
+	<tbody>
+		<tr>
+			<td>@cellpadding</td>
+			<td border="3">@border</td>
+			<td width="30">@width; img[@width] okay <img src="favicon.gif"
+				width="25" alt="filled" title="filled" /></td>
+			<td height="30">@height; img[@height] okay <img
+				src="favicon.gif" height="25" alt="filled" title="filled" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Bad JavaScript Attributes</h1>
+<ul>
+	<li><a href="javascript:alert('bad');" title="filled">javascript:</a></li>
+	<li><a href="filled" title="filled" onload="alert('bad');">@onload</a></li>
+	<li><a href="filled" title="filled" onunload="alert('bad');">@onunload</a></li>
+	<li><a href="filled" title="filled" onchange="alert('bad');">@onchange</a></li>
+	<li><a href="filled" title="filled" onsubmit="alert('bad');">@onsubmit</a></li>
+	<li><a href="filled" title="filled" onreset="alert('bad');">@onreset</a></li>
+	<li><a href="filled" title="filled" onselect="alert('bad');">@onselect</a></li>
+	<li><a href="filled" title="filled" onblur="alert('bad');">@onblur</a></li>
+	<li><a href="filled" title="filled" onfocus="alert('bad');">@onfocus</a></li>
+	<li><a href="filled" title="filled" onkeydown="alert('bad');">@onkeydown</a></li>
+	<li><a href="filled" title="filled" onkeypress="alert('bad');">@onkeypress</a></li>
+	<li><a href="filled" title="filled" onkeyup="alert('bad');">@onkeyup</a></li>
+	<li><a href="filled" title="filled" onclick="alert('bad');">@onclick</a></li>
+	<li><a href="filled" title="filled" ondblclick="alert('bad');">@ondblclick</a></li>
+	<li><a href="filled" title="filled" onmousedown="alert('bad');">@onmousedown</a></li>
+	<li><a href="filled" title="filled" onmousemove="alert('bad');">@onmousemove</a></li>
+	<li><a href="filled" title="filled" onmouseover="alert('bad');">@onmouseover</a></li>
+	<li><a href="filled" title="filled" onmouseout="alert('bad');">@onmouseout</a></li>
+	<li><a href="filled" title="filled" onmouseup="alert('bad');">@onmouseup</a></li>
+</ul>
+
+<h1>Bad Elements</h1>
+<ul>
+	<li><font><code>font</code></font></li>
+	<li>
+	<center><code>center</code></center>
+	</li>
+	<li><b><code>b</code></b></li>
+	<li><i><code>i</code></i></li>
+	<li><big><code>big</code></big></li>
+	<li><small><code>small</code></small></li>
+	<li>
+	<hr />
+	</li>
+	<li><marquee><code>marquee</code></marquee></li>
+	<li><blink><code>blink</code></blink></li>
+	<li><map>
+		<p><code>map</code></p>
+	</map></li>
+</ul>
+
+<h1>Missing Attributes</h1>
+<dl>
+	<dt><code>abbr</code> missing @title</dt>
+	<dd><abbr>abbreviation</abbr></dd>
+	<dt><code>abbr</code> empty @title</dt>
+	<dd><abbr title="">abbreviation</abbr></dd>
+	<dt><code>acronym</code> missing @title</dt>
+	<dd><acronym>acronym</acronym></dd>
+	<dt><code>acronym</code> empty @title</dt>
+	<dd><acronym title="">acronym</acronym></dd>
+	<dt><code>blockquote</code> missing @cite</dt>
+	<dd>
+	<blockquote>
+	<p>blockquote</p>
+	</blockquote>
+	</dd>
+	<dt><code>blockquote</code> empty @cite</dt>
+	<dd>
+	<blockquote cite="">
+	<p>blockquote</p>
+	</blockquote>
+	</dd>
+	<dt><code>q</code> missing @cite</dt>
+	<dd><q>q</q></dd>
+	<dt><code>q</code> empty @cite</dt>
+	<dd><q cite="">q</q></dd>
+	<dt><code>dfn</code> missing @title</dt>
+	<dd><dfn>dfn</dfn></dd>
+	<dt><code>dfn</code> empty @title</dt>
+	<dd><dfn title="">dfn</dfn></dd>
+	<dt><code>label</code> missing @for</dt>
+	<dd><label>label</label></dd>
+	<dt><code>label</code> empty @for</dt>
+	<dd><label for="">label</label></dd>
+	<dt><code>input</code> missing @type</dt>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input /></fieldset>
+	</form>
+	</dd>
+	<dt><code>iput</code> empty @type</dt>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>iput</code> wrong @disabled value</dt>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" disabled="any" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>input</code> wrong @readonly value</dt>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" readonly="any" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>input</code> wrong @checked value</dt>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="radio" checked="any" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="checkbox" checked="any" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>select</code> empty @size</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select size="">
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>select</code> empty @name</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select name="">
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>select</code> wrong @disabled</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select disabled="true">
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>select</code> wrong @multiple</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select multiple="true">
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>optgroup</code> missing @label</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup>
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>optgroup</code> empty @label</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>optgroup</code> wrong @disabled</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="one" disabled="true">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>option</code> wrong @selected</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="one">
+			<option value="one" selected="true">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>option</code> missing/empty @value mismatch</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="one">
+			<option>one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="one">
+			<option value="">one</option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><select>
+		<optgroup label="one">
+			<option value="one"></option>
+		</optgroup>
+	</select></fieldset>
+	</form>
+	</dd>
+	<dt><code>button</code> missing @type</dt>
+	<dd>
+	<button><code>button</code></button>
+	</dd>
+	<dt><code>buttom</code> empty @type</dt>
+	<dd>
+	<button type=""><code>button</code></button>
+	</dd>
+	<dt><code>form</code> missing/empty @method</dt>
+	<dd>
+	<form action="filled" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>form</code> missing/empty @enctype</dt>
+	<dd>
+	<form action="filled" method="get" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="" accept="filled"
+		accept-charset="filled">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>form</code> missing/empty @accept, @accept-charset</dt>
+	<dd>
+	<form action="filled" method="get" enctype="filled">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept="">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept-charset="">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dd>
+	<form action="filled" method="get" enctype="filled" accept=""
+		accept-charset="">
+	<fieldset><input type="text" /></fieldset>
+	</form>
+	</dd>
+	<dt><code>textarea</code> improper @disabled</dt>
+	<dd><form action="filled" method="get" enctype="filled" accept="filled"
+		accept-charset="filled">
+	<fieldset><textarea rows="5" cols="5" disabled="true">textarea</textarea></fieldset></form></dd>
+	<dt><code>textarea</code> improper @readonly</dt>
+	<dd><form action="filled" method="get" enctype="filled" accept="filled" accept-charset="filled"><fieldset>
+	<textarea rows="5" cols="5" readonly="true">textarea</textarea></fieldset></form></dd>
+</dl>
+<table summary="Testing del/ins attribute based styling.">
+	<tbody>
+		<tr>
+			<td colspan="2"></td>
+			<th scope="col">missing @datetime</th>
+			<th scope="col">empty @datetime</th>
+			<th scope="col">filled @datetime</th>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="rowgroup">missing @cite</th>
+			<th scope="row"><code>ins</code></th>
+			<td><ins><code>ins</code></ins></td>
+			<td><ins datetime=""><code>ins</code></ins></td>
+			<td><ins datetime="filled"><code>ins</code></ins></td>
+		</tr>
+		<tr>
+			<!-- th placeholder -->
+			<th scope="row"><code>del</code></th>
+			<td><del><code>del</code></del></td>
+			<td><del datetime=""><code>del</code></del></td>
+			<td><del datetime="filled"><code>del</code></del></td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="rowgroup">empty @cite</th>
+			<th scope="row"><code>ins</code></th>
+			<td><ins cite=""><code>ins</code></ins></td>
+			<td><ins cite="" datetime=""><code>ins</code></ins></td>
+			<td><ins cite="" datetime="filled"><code>ins</code></ins></td>
+		</tr>
+		<tr>
+			<!-- th placeholder -->
+			<th scope="row"><code>del</code></th>
+			<td><del cite=""><code>del</code></del></td>
+			<td><del cite="" datetime=""><code>del</code></del></td>
+			<td><del cite="" datetime="filled"><code>del</code></del></td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="rowgroup">filled @cite</th>
+			<th scope="row"><code>ins</code></th>
+			<td><ins cite="filled"><code>ins</code></ins></td>
+			<td><ins cite="filled" datetime=""><code>ins</code></ins></td>
+			<td><ins cite="filled" datetime="filled"><code>ins</code></ins></td>
+		</tr>
+		<tr>
+			<!-- th placeholder -->
+			<th scope="row"><code>del</code></th>
+			<td><del cite="filled"><code>del</code></del></td>
+			<td><del cite="filled" datetime=""><code>del</code></del></td>
+			<td><del cite="filled" datetime="filled"><code>del</code></del></td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Improperly Nested Form Fields</h1>
+<table summary="Testing form nesting based styling.">
+	<caption>Input fields with/out forms and fieldsets</caption>
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">No <code>form</code></th>
+			<th scope="col"><code>form</code></th>
+		</tr>
+		<tr>
+			<th scope="row">No <code>fieldset</code></th>
+			<td><input type="text" /></td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<p><input type="text" /></p>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>fieldset</code></th>
+			<td>
+			<fieldset><input type="text" /></fieldset>
+			</td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><input type="text" /></fieldset>
+			</form>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table summary="Testing form nesting based styling.">
+	<caption>Select fields with/out forms and fieldsets.</caption>
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">No <code>form</code></th>
+			<th scope="col"><code>form</code></th>
+		</tr>
+		<tr>
+			<th scope="row">No <code>fieldset</code></th>
+			<td><select>
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<p><select>
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></p>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>fieldset</code></th>
+			<td>
+			<fieldset><select>
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+			</td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><select>
+		<optgroup label="one">
+			<option value="one">one</option>
+		</optgroup>
+	</select></fieldset>
+			</form>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table summary="Testing form nesting based styling.">
+	<caption>Textareas with/out forms and fieldsets.</caption>
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">No <code>form</code></th>
+			<th scope="col"><code>form</code></th>
+		</tr>
+		<tr>
+			<th scope="row">No <code>fieldset</code></th>
+			<td><textarea rows="5" cols="5">textarea</textarea></td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<p><textarea rows="5" cols="5">textarea</textarea></p>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>fieldset</code></th>
+			<td>
+			<fieldset><textarea rows="5" cols="5">textarea</textarea></fieldset>
+			</td>
+			<td>
+			<form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><textarea rows="5" cols="5">textarea</textarea></fieldset>
+			</form>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table summary="Testing form nesting based styling.">
+	<caption>Option fields with/out selects and optgroups.</caption>
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">No <code>select</code></th>
+			<th scope="col"><code>select</code></th>
+		</tr>
+		<tr>
+			<th scope="row">No <code>optgroup</code></th>
+			<td><form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><option value="one">one</option><option value="two">two</option></fieldset></form></td>
+			<td><form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><select><option value="one">one</option><option value="two">two</option></select></fieldset></form></td>
+		</tr>
+		<tr>
+			<th scope="row"><code>optgroup</code></th>
+			<td><form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><optgroup label="one"><option value="one">one</option><option value="two">two</option></optgroup></fieldset></form></td>
+			<td><form action="" method="get" enctype="filled" accept="filled"
+				accept-charset="filled">
+			<fieldset><select><optgroup label="one"><option value="one">one</option><option value="two">two</option></optgroup></select></fieldset></form></td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Improperly Nested Table Elements</h1>
+<p>This doesn't work because Firefox inserts a tbody when missing.</p>
+<table summary="Testing table nesting based styling">
+	<thead>
+		<tr>
+			<td><code>thead</code></td>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td><code>tfoot</code></td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td><code>tbody</code></td>
+		</tr>
+	</tbody>
+	<tr>
+		<td>non-wrapped <code>tr</code></td>
+	</tr>
+</table>
+
+<address>address without vcard</address>
+<address class="vcard">address with vcard</address>
+<div class="vcard">
+<address>address nested under vcard</address>
+</div>
+</body>
+</html>

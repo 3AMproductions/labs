@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Velasquez;Gilbert;Joseph;Mr.;III
+FN:Gilbert Joseph Velasquez
+ORG:3AM Productions
+TITLE:Co-Founder
+TEL;CELL;VOICE:(614) 404-0215
+ADR;WORK:;;226 East Oakland Avenue;Columbus;OH;43201;United States of America
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:226 East Oakland Avenue=0D=0AColumbus, OH 43201=0D=0AUnited States of America
+URL;WORK:http://www.3amproductions.net
+EMAIL;PREF;INTERNET:Gilbert@3amproductions.net
+REV:20051110T072251Z
+END:VCARD

@@ -1,0 +1,24 @@
+BEGIN:VCARD
+VERSION:2.1
+UID:http://www.3amproductions.net/jason.php
+FN:Jason Robert Karns
+N:Karns;Jason;Robert;Mr.;
+PHOTO;TYPE=image/jpeg;ENCODING=b:MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329
+PHOTO;TYPE=image/jpeg;VALUE=URL:www.google.com
+SOUND;TYPE=image/jpeg;ENCODING=b:MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329
+SOUND:Jon Q PUBLIK
+SOUND;TYPE=image/jpeg;VALUE=URL:www.google.com
+BDAY:19830722
+TITLE:Co-Founder, CIO
+ROLE:Programmer
+TEL;CELL;WORK;VOICE;PREF:+1-937-308-0456
+TEL;HOME;VOICE:+1-937-857-9481
+EMAIL;INTERNET:jason@3amproductions.net
+URL;HOME:http://www.3amproductions.net/jason.php
+URL;WORK:http://www.3amproductions.net/
+ADR;WORK;PREF:;;226 East Oakland Avenue;Columbus;Ohio;43201;United States of America
+LABEL:;POSTAL;WORK;PREF;ENCODING=QUOTED-PRINTABLE:226 East Oakland Avenue=0D=0AColumbus, OH 43201=0D=0AUnited States of America
+ADR;HOME:;;12259 Cowpath Road;Saint Paris;Ohio;43072;United States of America
+LABEL:;POSTAL;HOME;ENCODING=QUOTED-PRINTABLE:12259 Cowpath Road=0D=0ASaint Paris, OH 43072=0D=0AUnited States of America
+ORG:3AM Productions;Technology
+END:VCARD

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="rdf_vcard2vcf_vcard.xsl"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+	<rdf:Description rdf:about="http://www.3amproductions.net/jason.php" xml:lang="en">
+		<vCard:FN>Jason Robert Karns</vCard:FN>
+		<vCard:N rdf:parseType="Resource">
+			<vCard:Family>Karns</vCard:Family>
+			<vCard:Given>Jason</vCard:Given>
+			<vCard:Other>Robert</vCard:Other>
+			<vCard:Prefix>Mr.</vCard:Prefix>
+		</vCard:N>
+		<!--
+		<vCard:PHOTO vCard:ENCODING="b" vCard:TYPE="image/jpeg">MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329</vCard:PHOTO>
+		<vCard:PHOTO vCard:TYPE="image/jpeg" rdf:resource="www.google.com"/>
+		<vCard:SOUND vCard:ENCODING="b" vCard:TYPE="image/jpeg">MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329</vCard:SOUND>
+		<vCard:SOUND>Jon Q PUBLIK</vCard:SOUND>
+		<vCard:SOUND vCard:TYPE="image/jpeg" rdf:resource="www.google.com"/>
+-->
+		<vCard:BDAY>19830722</vCard:BDAY>
+		<vCard:TITLE>
+			<rdf:bag>
+				<rdf:li>Co-Founder</rdf:li>
+				<rdf:li>CTO</rdf:li>
+			</rdf:bag>
+		</vCard:TITLE>
+		<vCard:ROLE>Programmer</vCard:ROLE>
+		<vCard:TEL rdf:parseType="Resource">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#cell"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#pref"/>
+			<rdf:value>+1-937-308-0456</rdf:value>
+		</vCard:TEL>
+		<vCard:TEL rdf:parseType="Resource">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
+			<rdf:value>+1-937-857-9481</rdf:value>
+		</vCard:TEL>
+		<vCard:EMAIL rdf:parseType="Resource">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+			<rdf:value>jason@3amproductions.net</rdf:value>
+		</vCard:EMAIL>
+		<vCard:URL rdf:resource="http://www.3amproductions.net/jason.php">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+		</vCard:URL>
+		<vCard:URL rdf:resource="http://www.3amproductions.net/">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+		</vCard:URL>
+		<vCard:ADR rdf:parseType="Resource">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#pref"/>
+			<vCard:Street>226 East Oakland Avenue</vCard:Street>
+			<vCard:Locality>Columbus</vCard:Locality>
+			<vCard:Region>Ohio</vCard:Region>
+			<vCard:Pcode>43201</vCard:Pcode>
+			<vCard:Country>United States of America</vCard:Country>
+		</vCard:ADR>
+		<vCard:LABEL rdf:parseType="Resource" vCard:ENCODING="QUOTED-PRINTABLE">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#postal"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#pref"/>
+			<rdf:value rdf:parseType="Literal">226 East Oakland Avenue=0D=0AColumbus, OH 43201=0D=0AUnited States of America</rdf:value>
+		</vCard:LABEL>
+		<vCard:ADR rdf:parseType="Resource">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+			<vCard:Street>12259 Cowpath Road</vCard:Street>
+			<vCard:Locality>Saint Paris</vCard:Locality>
+			<vCard:Region>Ohio</vCard:Region>
+			<vCard:Pcode>43072</vCard:Pcode>
+			<vCard:Country>United States of America</vCard:Country>
+		</vCard:ADR>
+		<vCard:LABEL rdf:parseType="Resource" vCard:ENCODING="QUOTED-PRINTABLE">
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#postal"/>
+			<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+			<rdf:value rdf:parseType="Literal">12259 Cowpath Road=0D=0ASaint Paris, OH 43072=0D=0AUnited States of America</rdf:value>
+		</vCard:LABEL>
+		<vCard:ORG rdf:parseType="Resource">
+			<vCard:Orgname>3AM Productions</vCard:Orgname>
+			<vCard:Orgunit>Technology</vCard:Orgunit>
+		</vCard:ORG>
+		<!--
+		<vCard:LOGO vCard:ENCODING="b" vCard:TYPE="image/jpeg">MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329</vCard:LOGO>
+		<vCard:LOGO vCard:TYPE="image/jpeg" rdf:resource="www.google.com"/>
+-->
+	</rdf:Description>
+</rdf:RDF>
